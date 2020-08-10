@@ -1,0 +1,6 @@
+1.新建sample/origin、train、test三个文件夹
+2、运行gen_sample_by_captcha.py生成二维码样本图片
+3、运行verify_and_split_data.py样本空间分割成测试集与训练集
+4、运行train_model.py进行模型训练 默认训练次数为3000次，首次测试正确率54%
+5、再次运行train_model.py则从步骤四保存的模型开始训练，当图片准确率》0.99时，自动结束，约3000步
+6、运行test_batch.py进行测试，测试结果正确率仅有为40%，
